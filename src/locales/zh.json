@@ -1,0 +1,55 @@
+{
+  "menu": {
+    "about": "關於我",
+    "skills": "技能",
+    "projects": "專案",
+    "experience": "工作經驗",
+    "education": "學歷",
+    "contact": "聯絡我",
+    "settings": "設定"
+  },
+  "submenu": {
+    "profile": "個人簡介",
+    "frontend": "前端技能",
+    "backend": "後端技能",
+    "personalProjects": "個人專案",
+    "professionalProjects": "公司專案",
+    "jobs": "職涯經歷",
+    "schooling": "教育背景",
+    "contactForm": "聯絡表單",
+    "language": "語言"
+  },
+  "language": {
+    "select": "選擇語言"
+  },
+  "Home": {
+    "skills": "相關技能",
+    "selfIntroduction": "自我介紹",
+    "myPortfolio": "我的作品"
+  },
+  "resume": {
+    "contact": "連絡方式",
+    "skills": "相關技能",
+    "languages": "語言能力",
+    "softskills": "非技術能力",
+    "StudyWorkExperience": "學習與工作經歷",
+    "experience": "研究與助教經歷",
+    "work": "工作經歷",
+    "thesis": "論文與研究",
+
+    "contactFields": {
+      "phone": "手機",
+      "email": "電子信箱",
+      "address": "地址"
+    },
+
+    "skillsFields": {
+      "computer": "程式能力",
+      "languages": "語言能力",
+      "softskills": "非技術能力"
+    }
+  },
+  "FontendSkill": "我的前端作品",
+  "BackendSkill": "我的後端作品",
+  "githubLink": "👉點這裡查看github連結"
+}

@@ -1,0 +1,56 @@
+{
+  "nav": {
+    "home": "Home",
+    "resume": "Resume"
+  },
+  "menu": {
+    "about": "About Me",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "education": "Education",
+    "contact": "Contact",
+    "settings": "Settings"
+  },
+  "submenu": {
+    "profile": "Profile",
+    "frontend": "Frontend Skills",
+    "backend": "Backend Skills",
+    "personalProjects": "Personal Projects",
+    "professionalProjects": "Professional Projects",
+    "jobs": "Work Experience",
+    "schooling": "Education Background",
+    "contactForm": "Contact Me",
+    "language": "Language"
+  },
+  "language": {
+    "select": "Select Language"
+  },
+  "Home": {
+    "skills": "Skills",
+    "selfIntroduction": "Self Introduction",
+    "myPortfolio": "My Portfolio"
+  },
+  "resume": {
+    "contact": "Contact Info",
+    "skills": "Skills",
+    "languages": "Languages",
+    "softskills": "Soft Skills",
+    "StudyWorkExperience": "Study and work experience",
+    "experience": "Research & Teaching",
+    "work": "Work Experience",
+    "thesis": "Thesis & Research",
+
+    "contactFields": {
+      "phone": "Phone",
+      "email": "Email",
+      "address": "Address"
+    },
+
+    "skillsFields": {
+      "computer": "Programming skills",
+      "languages": "Languages",
+      "softskills": "Soft Skills"
+    }
+  }
+}

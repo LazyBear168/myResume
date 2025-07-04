@@ -1,0 +1,94 @@
+<!-- File: src/views/Resume.vue -->
+<template>
+  <div class="container">
+    <div class="box-left">
+      <!-- 直接使用 resumeData.picture -->
+      <img :src="resumeData.picture" alt="My picture" class="picture-img" />
+
+      <h1 :class="locale === 'en' ? 'name-en' : 'name-zh'">
+        {{ resumeData.name }}
+      </h1>
+
+      <h3 class="section-title">{{ $t('resume.contact') }}</h3>
+      <ul class="contact-list">
+        <li><Phone size="16" /> {{ resumeData.contact.phone }}</li>
+        <li><Mail size="16" /> {{ resumeData.contact.email }}</li>
+        <li><MapPin size="16" /> {{ resumeData.contact.address }}</li>
+      </ul>
+
+      <h3 class="section-title">{{ $t('resume.skills') }}</h3>
+
+      <ul class="contact-list">
+        <li>
+          <strong>{{ $t('resume.skillsFields.computer') }}:</strong><br />
+          {{ resumeData.skills.progarmming.join(', ') }}
+        </li>
+        <br />
+        <li>
+          <strong>{{ $t('resume.languages') }}:</strong>
+          <br />
+          {{ resumeData.skills.languages.join(', ') }}
+        </li>
+        <br />
+        <li>
+          <strong>{{ $t('resume.softskills') }}:</strong>
+          <br />
+          {{ resumeData.skills.softskills.join(', ') }}
+        </li>
+      </ul>
+    </div>
+
+    <div class="right-view">
+      <section>
+        <h3>{{ $t('resume.StudyWorkExperience') }}</h3>
+        <ul>
+          <li v-for="item in resumeData.education" :key="item.school">
+            {{ item.school }}<br />
+            <span v-if="item.degree"
+              >{{ item.degree }}（{{ item.duration }}）</span
+            >
+            <span v-else>（{{ item.duration }}）</span>
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>{{ $t('resume.thesis') }}</h3>
+        <ul>
+          <li>{{ resumeData.research.thesis }}</li>
+          <li>{{ resumeData.research.tools.join('、') }}</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>{{ $t('resume.experience') }}</h3>
+        <ul>
+          <li v-for="exp in resumeData.experiences" :key="exp.title">
+            <strong>{{ exp.title }}</strong
+            >（{{ exp.duration }}）<br />
+            {{ exp.description }}
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>{{ $t('Home.selfIntroduction') }}</h3>
+        <p class="paragraph">{{ resumeData.selfIntro.selfIntroComplete }}</p>
+      </section>
+    </div>
+  </div>
+</template>
+
+<script setup>
+import { computed } from 'vue'
+import { useI18n } from 'vue-i18n'
+import zhResume from '../data/resumeData.zh.js'
+import enResume from '../data/resumeData.en.js'
+import { Mail, Phone, MapPin } from 'lucide-vue-next'
+
+import './Views.css'
+
+const { locale } = useI18n()
+
+const resumeData = computed(() => (locale.value === 'en' ? enResume : zhResume))
+</script>

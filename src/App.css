@@ -1,0 +1,48 @@
+/* name: src/App.css */
+body {
+  background-color: #efefef; /* light beige */
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  background: #ffffff;
+  align-items: center;
+}
+
+.navbar a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.navbar a.router-link-active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.router-views {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 2rem auto; /* Center horizontally */
+  margin-top: 0;
+  padding: 0;
+}
+.lang-btn {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
