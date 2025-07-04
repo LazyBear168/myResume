@@ -57,35 +57,50 @@ export default {
     {
       name: 'Crypto Index Tracker',
       url: 'https://crypto-index-app.web.app/',
+      type: ['front', 'Home', 'project'],
       descriptionSimple:
         '使用 React 開發的加密貨幣追蹤平台，整合多來源 API 並自建後端提供歷史資料與 K 線圖，前端部署於 Firebase，強化 API 串接與資料視覺化能力。',
       descriptionComplete:
         '使用 React 開發的加密貨幣指數追蹤平台，前端部署於 Firebase，整合 CoinGecko API 與 Binance API，並自建後端 Render Server 提供 K 線圖與歷史價格查詢功能。支援多種加密資產的即時價格與圖表顯示，具備響應式設計與狀態管理，強化前端 API 串接與資料視覺化實作能力。',
-      githubLink: '',
+      githubLink: 'https://github.com/LazyBear168/crypto-index-app',
     },
     {
       name: 'Sunny Habit App',
       url: 'https://sunny-habit-app.web.app/',
+      type: ['front', 'Home', 'project'],
       descriptionSimple:
         'React.js 習慣養成工具，具巢狀清單、打卡統計與 Firebase 驗證，著重互動設計與資料整合。',
       descriptionComplete:
         '使用 React.js 開發的習慣養成工具，支援巢狀清單、每日打卡、自訂習慣與統計圖表，並整合 Firebase 進行資料儲存與身份驗證。強化前後端整合與使用者互動設計能力。',
-      githubLink: '',
+      githubLink: 'https://github.com/LazyBear168/habit-tracker',
     },
     {
       name: 'Chengs Resume',
       url: 'https://chengs-resume.web.app/',
+      type: ['front', 'Home', 'project'],
       descriptionSimple:
         '個人履歷網站，展示學經歷、技能與作品，支援中英文切換與響應式設計。（就是您現在在的這個網頁呦）',
       descriptionComplete:
         '使用 Vue.js 開發的個人履歷網站，整合 Vue Router、Vue i18n 進行頁面切換與語系管理，具備中英文雙語模式與響應式設計，內容涵蓋自我介紹、技能、學經歷與個人作品等，部署於 Firebase Hosting。展現前端開發與國際化實作能力。（就是您現在在的這個網頁呦）',
-      githubLink: '',
+      githubLink: 'https://github.com/LazyBear168/myResume',
+    },
+    {
+      name: 'Render Server 儲存幣價資訊',
+      url: 'https://crypto-index-backend.onrender.com/kline',
+      type: ['back', 'project'],
+      descriptionSimple:
+        '提供前端查詢加密幣歷史價格與 K 線圖資料的 API 後端服務，整合 CoinGecko 與 Binance API 並部署於 Render。',
+      descriptionComplete:
+        '使用 Node.js 與 Express 開發的後端伺服器，提供查詢加密幣歷史價格與 K 線圖資料的 API 接口。整合 CoinGecko、Binance API，實作自動更新與快取。該專案部署於 Render，支援 Crypto Index Tracker 前端平台使用，K 線圖查詢 API 可透過 /kline endpoint 進行測試。',
+      githubLink: 'https://github.com/LazyBear168/crypto-index-backend',
     },
     {
       name: '點擊這裡看更多介紹',
-      url: 'https://chengs-resume.web.app/projects/personal',
+      url: '/projects/personal',
+      type: ['Home', 'front', 'back'],
     },
   ],
+
   contact: {
     phone: '0983-728-258',
     email: 'chengjih77@gmail.com',
@@ -93,8 +108,16 @@ export default {
   },
 
   research: {
-    thesis: '碩士論文：以彈塑性模型描述多維加載下的塑性行為',
-    tools: ['Mathematica 正解推導', 'MATLAB 模擬', 'LaTeX 論文排版'],
+    publish: {
+      title:
+        '期刊發表：Building structure with elastoplastic bilinear model under multi-dimensional earthquake forces',
+      url: 'https://academic.oup.com/jom/article/doi/10.1093/jom/ufac045/6874529',
+    },
+    thesis: {
+      title: '碩士論文：以彈塑性模型描述多維加載下的塑性行為',
+      url: 'https://ndltd.ncl.edu.tw/cgi-bin/gs32/gsweb.cgi/login?o=dnclcdr&s=id=%22110NTU05015161%22.&searchmode=basic',
+    },
+    tools: ['Mathematica 正解推導', 'MATLAB 模擬', 'LabVIEW 實驗程式維護'],
   },
 
   experiences: [
@@ -119,22 +142,22 @@ export default {
     {
       project: '潮州機廠工程',
       description:
-        '擔任結構窗口，負責機廠鋼構主廠房與地下設施之結構設計作業，包含建模、結構分析、結構BIM模型製作與圖說整合。設計期間多次與機電、設備、建築師等介面單位協調圖說，熟悉鋼構設計流程與跨部門整合經驗。',
+        '擔任結構設計窗口，主導鋼構主廠房與地下設施之建模與結構分析，並負責 BIM 模型整合與圖說協調。在設計過程中，頻繁與機電、設備與建築師等跨部門單位協作，強化溝通與系統整合能力。同時亦自主開發輔助設計工具，提高團隊效率與精準度，展現技術主動性與開發潛力。',
     },
     {
       project: '桃園鐵路地下化工程',
       description:
-        '參與緊急出口與通風口之地下結構及地上附屬設施設計，包含地下樓梯間、設備間與通風豎井等構造物，熟悉地下結構設計流程與相關構造細節（例如止水、開挖階段考量等）。',
+        '參與多項地下結構設施（如緊急出口、通風口）的設計，涵蓋樓梯間、設備間與通風豎井等，深入理解地下構造之設計流程與施工限制。熟悉多階段工序與邊界條件模擬，培養縝密邏輯與專案管理能力。',
     },
     {
       project: '桃園捷運綠線',
       description:
-        '負責部分沿線小型廠房之結構設計，協助完成廠房建模、荷載評估與配筋設計，並配合各系統介面進行設計調整與圖說修訂。',
+        '負責沿線多座小型廠房之結構設計與荷載分析，並與各系統（如機電、建築）介面單位協調設計需求與圖說調整，展現靈活應變與跨職能溝通能力。過程中亦強化對建模工具與資料整合的掌握，累積大型系統架構經驗。',
     },
     {
       project: '太魯閣明隧道整建工程',
       description:
-        '參與明隧道結構補強與擋土構造之設計檢討，熟悉既有結構之現況調查、分析與補強方法評估。',
+        '參與老舊結構補強與擋土設施設計，從現況調查、結構模擬到補強方案評估皆有涉獵。熟悉既有系統改造流程，並提升了問題分析、資料整理與技術提案能力，具備將工程問題轉化為系統解決方案的實務經驗。',
     },
   ],
 }

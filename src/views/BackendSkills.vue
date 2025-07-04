@@ -16,15 +16,32 @@
         <h3>{{ resumeData.jobApplication }}</h3>
       </div>
       <section>
-        <h3 class="section-title">{{ $t('Home.myPortfolio') }}</h3>
+        <h3 class="section-title">{{ $t('BackendSkill') }}</h3>
         <ul>
-          <li v-for="project in resumeData.projects" :key="project.name">
-            <a :href="project.url" target="_blank" rel="noopener noreferrer">
-              <strong>{{ project.name }}</strong> </a
-            ><br />
-            {{ project.descriptionSimple }}
+          <li v-for="project in backProjects" :key="project.name">
+            <template v-if="project.url.startsWith('/')">
+              <!-- 使用 router-link -->
+              <router-link :to="project.url">
+                <strong>{{ project.name }}</strong>
+              </router-link>
+            </template>
+            <template v-else>
+              <!-- 外部連結 -->
+              <a :href="project.url" target="_blank" rel="noopener noreferrer">
+                <strong>{{ project.name }}</strong>
+              </a>
+            </template>
+            <br />
+            {{ project.descriptionComplete }}<br />
+            <a
+              v-if="project.githubLink"
+              :href="project.githubLink"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div>{{ $t('githubLink') }}</div>
+            </a>
           </li>
-          <li>點擊這裡看更多介紹</li>
         </ul>
       </section>
     </div>
@@ -36,7 +53,6 @@ import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import zhresumeData from '../data/resumeData.zh.js'
 import enresumeData from '../data/resumeData.en.js'
-import { Mail, Phone, MapPin } from 'lucide-vue-next'
 
 import './Views.css'
 
@@ -48,5 +64,9 @@ const resumeData = computed(() =>
 
 const ntu = computed(() =>
   resumeData.value.education.find((item) => item.key === 'ntu')
+)
+
+const backProjects = computed(() =>
+  resumeData.value.projects.filter((p) => p.type.includes('back'))
 )
 </script>

@@ -96,3 +96,11 @@
 .paragraph {
   white-space: pre-line;
 }
+
+.workDescription {
+  font-size: 14px;
+}
+.workDescription li {
+  margin: 1rem;
+  list-style: none;
+}

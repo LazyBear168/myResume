@@ -1,70 +1,11 @@
-// File: src/data/resumeData.en.js
 import MyPicture from '/assets/Mypicture.jpg'
 
 export default {
   picture: MyPicture,
   name: 'Cheng-Jih Chang',
-  jobApplication:
-    'Job Application: Frontend Web Developer / Full-Stack Web Developer',
-  selfIntroSimple:
-    'Engineering background with strong problem-solving skills, now focused on web development. Experienced in JavaScript, Vue, React, Node.js, and Python. Eager to grow as a frontend or full-stack developer and build impactful products.',
-
-  projects: [
-    {
-      name: 'Crypto Index Tracker',
-      url: 'https://crypto-index-app.web.app/',
-      descriptionSimple:
-        'A cryptocurrency tracking platform built with React. Integrates multiple APIs and a custom backend for historical data and candlestick charts. Frontend deployed on Firebase. Focuses on API integration and data visualization.',
-      description:
-        'A cryptocurrency index tracking platform developed with React. The frontend is deployed on Firebase, integrating CoinGecko and Binance APIs, along with a custom Render backend server to provide candlestick charts and historical price data. Supports real-time display of various crypto assets with responsive design and state management, enhancing skills in API integration and data visualization.',
-    },
-    {
-      name: 'Sunny Habit App',
-      url: 'https://sunny-habit-app.web.app/',
-      descriptionSimple:
-        'A React.js habit-tracking app with nested lists, progress tracking, and Firebase authentication. Emphasizes interactive design and data integration.',
-      description:
-        'A habit-tracking app built with React.js. Supports nested habit lists, daily check-ins, custom habits, and progress visualization. Integrated with Firebase for data storage and user authentication. Strengthens full-stack integration and interactive UI/UX design skills.',
-    },
-  ],
-  contact: {
-    phone: '0983-728-258',
-    email: 'chengjih77@gmail.com',
-    address: 'Dali District, Taichung City',
-  },
-
-  profile: {
-    phone: '0983-728-258',
-    email: 'chengjig77@gmail.com',
-    address: 'Da’an District, Taipei City',
-  },
-
-  skills: {
-    progarmming: [
-      'JavaScript',
-      'HTML',
-      'Css',
-      'React',
-      'vue',
-      'Node.js',
-      'Python',
-      'LabVIEW',
-      'Wolfram Mathematica',
-      'LaTeX',
-      'Grapher',
-    ],
-    languages: ['Chinese', 'Taiwanese (native)', 'English (intermediate)'],
-    softskills: [
-      'Communication',
-      'Teamwork',
-      'Independence',
-      'Problem Solving',
-    ],
-  },
-
   education: [
     {
-      school: 'Cotec Engineering Consulting Inc.',
+      school: 'CECI Engineering Consultants, Inc., Taiwan',
       degree: 'Structural Engineer',
       duration: '2022/09 - 2024/07',
     },
@@ -79,58 +20,150 @@ export default {
       duration: '2016/09 - 2020/07',
     },
   ],
+  jobApplication: 'Job Title: Frontend Web Developer, Full-Stack Web Developer',
+  skills: {
+    progarmming: [
+      'JavaScript',
+      'HTML',
+      'CSS',
+      'React',
+      'Vue',
+      'Node.js',
+      'Python',
+      'LabVIEW',
+      'Matlab',
+      'Wolfram Mathematica',
+    ],
+    languages: ['Mandarin', 'Taiwanese (native)', 'English (intermediate)'],
+    softskills: [
+      'Communication & Coordination',
+      'Teamwork',
+      'Independent Work',
+      'Problem Solving',
+    ],
+  },
+  selfIntro: {
+    selfIntroSimple: `I’m an engineering professional with a background in structural design and a passion for web development. Skilled in JavaScript, Vue, React, and backend tools like Node.js and Python, I bring strong problem-solving and analytical abilities. I’m eager to apply my skills in a frontend or full-stack role to build impactful digital products.`,
+    selfIntroComplete: `I’m a structural engineering professional turned web developer, passionate about solving technical challenges. My experience in large-scale infrastructure projects honed my design skills and cross-functional collaboration.
+Driven by a desire to streamline workflows, I built a seismic design tool used in the Chaozhou Railway Factory project—this sparked my shift into software. Now, I work with JavaScript, Vue, React..., Key projects include:
+Crypto Index Tracker – Real-time crypto data app with custom backend and API integration.
+Sunny Habit App – Firebase-powered habit tracker with stats and nested lists.
+Personal Resume Site – A responsive, bilingual portfolio built with Vue.js.
+I’m eager to contribute to digital products with strong logic, practical skills, and continuous learning.`,
+  },
+
+  projects: [
+    {
+      name: 'Crypto Index Tracker',
+      url: 'https://crypto-index-app.web.app/',
+      type: ['front', 'Home', 'project'],
+      descriptionSimple:
+        'A React-based cryptocurrency tracking platform integrating multiple APIs and a custom backend for historical K-line data. Deployed on Firebase. Strengthens skills in API integration and data visualization.',
+      descriptionComplete:
+        'A cryptocurrency index tracking platform built with React and deployed on Firebase. Integrates CoinGecko and Binance APIs, along with a custom backend hosted on Render to serve K-line charts and historical price data. Displays prices and charts for multiple assets with responsive design and state management. Enhances practical API integration and data visualization skills.',
+      githubLink: 'https://github.com/LazyBear168/crypto-index-app',
+    },
+    {
+      name: 'Sunny Habit App',
+      url: 'https://sunny-habit-app.web.app/',
+      type: ['front', 'Home', 'project'],
+      descriptionSimple:
+        'A React.js habit tracker featuring nested lists, check-in tracking, and Firebase authentication. Focuses on interactive UX and data integration.',
+      descriptionComplete:
+        'A habit tracking tool built with React.js, supporting nested lists, daily check-ins, custom habits, and statistics visualization. Integrated with Firebase for data storage and authentication. Strengthens frontend-backend integration and user experience design skills.',
+      githubLink: 'https://github.com/LazyBear168/habit-tracker',
+    },
+    {
+      name: 'Chengs Resume',
+      url: 'https://chengs-resume.web.app/',
+      type: ['front', 'Home', 'project'],
+      descriptionSimple:
+        'A personal resume website showcasing background, skills, and projects with responsive layout and bilingual support (you are here!).',
+      descriptionComplete:
+        'A personal resume site built with Vue.js, using Vue Router and Vue i18n for page navigation and language management. Features bilingual (EN/ZH) support and responsive layout, covering self-introduction, skills, education, and projects. Deployed on Firebase Hosting. Demonstrates frontend and internationalization skills. (Yes, you’re on this site!)',
+      githubLink: 'https://github.com/LazyBear168/myResume',
+    },
+    {
+      name: 'Render Server for Crypto Data',
+      url: 'https://crypto-index-backend.onrender.com/kline',
+      type: ['back', 'project'],
+      descriptionSimple:
+        'Backend API for serving historical crypto prices and K-line data, integrating CoinGecko and Binance APIs. Deployed on Render.',
+      descriptionComplete:
+        'A backend server built with Node.js and Express, providing APIs for historical crypto prices and K-line chart data. Integrates CoinGecko and Binance APIs with automatic updates and caching. Deployed on Render and used by the Crypto Index Tracker frontend. Try out the /kline endpoint.',
+      githubLink: 'https://github.com/LazyBear168/crypto-index-backend',
+    },
+    {
+      name: 'Click here for more',
+      url: '/projects/personal',
+      type: ['Home', 'front', 'back'],
+    },
+  ],
+
+  contact: {
+    phone: '0983-728-258',
+    email: 'chengjih77@gmail.com',
+    address: 'Dali District, Taichung City',
+  },
 
   research: {
-    thesis:
-      'Master’s Thesis: Plasticity Modeling under Multiaxial Loading using Elasto-plastic Formulation',
+    publish: {
+      title:
+        'Journal Publication: Building structure with elastoplastic bilinear model under multi-dimensional earthquake forces',
+      url: 'https://academic.oup.com/jom/article/doi/10.1093/jom/ufac045/6874529',
+    },
+    thesis: {
+      title:
+        'Master’s Thesis: Describing Plastic Behavior Under Multiaxial Loading Using a Plasticity Model',
+      url: 'https://ndltd.ncl.edu.tw/cgi-bin/gs32/gsweb.cgi/login?o=dnclcdr&s=id=%22110NTU05015161%22.&searchmode=basic',
+    },
     tools: [
       'Mathematica for symbolic derivation',
       'MATLAB simulation',
-      'LaTeX typesetting',
+      'LabVIEW experimental program maintenance',
     ],
   },
-
   experiences: [
     {
-      title: 'Research Assistant (MOST project)',
+      title: 'Research Assistant',
       duration: '2020/09 - 2022/07',
       description:
-        'Experimental setup, LabVIEW, Grapher, MTS controller bidding and execution.',
+        'Lab experiments, LabVIEW, Grapher, MTS controller procurement.',
     },
     {
       title: 'Teaching Assistant - Elasticity',
       duration: '2021/09 - 2022/01',
       description:
-        'Grading, tutoring graduate students, communication with professors.',
+        'Grading, mentoring graduate students, assisting professor communication.',
     },
     {
       title: 'Teaching Assistant - Plasticity',
       duration: '2022/02 - 2022/06',
       description:
-        'Grading, tutoring graduate students, communication with professors.',
+        'Grading, mentoring graduate students, assisting professor communication.',
     },
   ],
 
   workDetails: [
     {
-      project: 'Chaozhou Railway Depot Project',
+      project: 'Chaozhou Railway Factory',
       description:
-        'Responsible for structural modeling and design of the main steel structures and underground facilities. Coordinated with MEP and architects. Familiar with BIM integration and steel construction workflows.',
+        'Served as structural design lead for steel buildings and underground structures. Responsible for modeling, structural analysis, BIM integration, and coordination. Collaborated with MEP, architectural, and equipment teams. Also developed internal tools to improve design precision and efficiency, demonstrating initiative and technical potential.',
     },
     {
       project: 'Taoyuan Railway Underground Project',
       description:
-        'Involved in the design of emergency exits and ventilation shafts. Experienced in underground structure design and detailing (e.g., waterproofing and excavation stages).',
+        'Participated in design of underground structures such as emergency exits and ventilation shafts. Gained familiarity with underground construction methods, phased excavation, and design detailing. Developed strong logic and project coordination skills.',
     },
     {
       project: 'Taoyuan MRT Green Line',
       description:
-        'Handled small station building designs, including modeling, load evaluation, rebar detailing, and coordination with other systems.',
+        'Handled structural design and load analysis of multiple small facility buildings along the line. Worked with multidisciplinary teams to coordinate design adjustments and drawing revisions. Built experience in system modeling and integration.',
     },
     {
-      project: 'Taroko Cut-and-Cover Tunnel Rehabilitation',
+      project: 'Taroko Tunnel Reinforcement Project',
       description:
-        'Participated in assessment and retrofit of existing tunnel and retaining structures. Familiar with site survey, analysis, and strengthening strategies.',
+        'Contributed to the structural strengthening of existing tunnels and retaining structures. Involved in field investigation, structural simulation, and retrofit scheme evaluations. Acquired experience in rehabilitating legacy systems and formulating data-driven technical proposals.',
     },
   ],
 }

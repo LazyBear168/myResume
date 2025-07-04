@@ -17,7 +17,7 @@
       </div>
       <section>
         <h3 class="section-title">{{ $t('resume.work') }}</h3>
-        <ul>
+        <ul class="workDescription">
           <li v-for="work in resumeData.workDetails" :key="work.project">
             <strong>{{ work.project }}</strong
             ><br />
@@ -34,7 +34,6 @@ import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import zhresumeData from '../data/resumeData.zh.js'
 import enresumeData from '../data/resumeData.en.js'
-import { Mail, Phone, MapPin } from 'lucide-vue-next'
 
 import './Views.css'
 

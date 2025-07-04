@@ -1,15 +1,11 @@
 {
-  "nav": {
-    "home": "Home",
-    "resume": "Resume"
-  },
   "menu": {
     "about": "About Me",
     "skills": "Skills",
     "projects": "Projects",
     "experience": "Experience",
     "education": "Education",
-    "contact": "Contact",
+    "contact": "Contact Me",
     "settings": "Settings"
   },
   "submenu": {
@@ -18,9 +14,9 @@
     "backend": "Backend Skills",
     "personalProjects": "Personal Projects",
     "professionalProjects": "Professional Projects",
-    "jobs": "Work Experience",
+    "jobs": "Career Experience",
     "schooling": "Education Background",
-    "contactForm": "Contact Me",
+    "contactForm": "Contact Form",
     "language": "Language"
   },
   "language": {
@@ -32,14 +28,14 @@
     "myPortfolio": "My Portfolio"
   },
   "resume": {
-    "contact": "Contact Info",
+    "contact": "Contact Information",
     "skills": "Skills",
-    "languages": "Languages",
+    "languages": "Language Proficiency",
     "softskills": "Soft Skills",
-    "StudyWorkExperience": "Study and work experience",
-    "experience": "Research & Teaching",
+    "StudyWorkExperience": "Academic and Work Experience",
+    "experience": "Research and Teaching Assistant Experience",
     "work": "Work Experience",
-    "thesis": "Thesis & Research",
+    "thesis": "Thesis and Research",
 
     "contactFields": {
       "phone": "Phone",
@@ -48,9 +44,12 @@
     },
 
     "skillsFields": {
-      "computer": "Programming skills",
+      "computer": "Programming Skills",
       "languages": "Languages",
       "softskills": "Soft Skills"
     }
-  }
+  },
+  "FontendSkill": "My Frontend Projects",
+  "BackendSkill": "My Backend Projects",
+  "githubLink": "👉 Click here for GitHub link"
 }

@@ -26,9 +26,44 @@
             <span v-else>（{{ item.duration }}）</span>
           </li>
         </ul>
+
         <h3 class="section-title">{{ $t('resume.thesis') }}</h3>
         <ul>
-          <li>{{ resumeData.research.thesis }}</li>
+          <li
+            v-if="
+              resumeData.research.publish && resumeData.research.publish.url
+            "
+          >
+            <a
+              :href="resumeData.research.publish.url"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {{ resumeData.research.publish.title }}
+            </a>
+          </li>
+          <li v-else>
+            {{
+              resumeData.research.publish.title || resumeData.research.publish
+            }}
+          </li>
+          <li
+            v-if="resumeData.research.thesis && resumeData.research.thesis.url"
+          >
+            <a
+              :href="resumeData.research.thesis.url"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {{ resumeData.research.thesis.title }}
+            </a>
+          </li>
+          <li v-else>
+            {{
+              resumeData.research.thesis.title ||
+              resumeData.research.pubthesisish
+            }}
+          </li>
           <li>{{ resumeData.research.tools.join('、') }}</li>
         </ul>
       </section>

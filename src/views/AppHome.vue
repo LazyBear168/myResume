@@ -33,11 +33,21 @@
       <section>
         <h3 class="section-title">{{ $t('Home.myPortfolio') }}</h3>
         <ul>
-          <li v-for="project in resumeData.projects" :key="project.name">
-            <a :href="project.url" target="_blank" rel="noopener noreferrer">
-              <strong>{{ project.name }}</strong> </a
-            ><br />
-            {{ project.descriptionSimple }}
+          <li v-for="project in homeProjects" :key="project.name">
+            <template v-if="project.url.startsWith('/')">
+              <!-- 使用 router-link -->
+              <router-link :to="project.url">
+                <strong>{{ project.name }}</strong>
+              </router-link>
+            </template>
+            <template v-else>
+              <!-- 外部連結 -->
+              <a :href="project.url" target="_blank" rel="noopener noreferrer">
+                <strong>{{ project.name }}</strong>
+              </a>
+            </template>
+            <br />
+            {{ project.descriptionSimple }}<br />
           </li>
         </ul>
       </section>
@@ -61,5 +71,8 @@ const resumeData = computed(() =>
 
 const ntu = computed(() =>
   resumeData.value.education.find((item) => item.key === 'ntu')
+)
+const homeProjects = computed(() =>
+  resumeData.value.projects.filter((p) => p.type.includes('Home'))
 )
 </script>
