@@ -8,8 +8,9 @@ A bilingual (中文/English) responsive resume and portfolio site built with Vue
 This project showcases frontend and backend projects, professional experience, education background, and allows PDF export of the current view (excluding the topbar).
 
 ## 🌐 Demo
-
 👉 [Live Website](https://chengs-resume.web.app/)
+![Resume Screenshot](public/assets/demo-screenshot.png)
+
 
 ## ✨ Features
 
