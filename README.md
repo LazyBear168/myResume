@@ -25,7 +25,7 @@ This project showcases frontend and backend projects, professional experience, e
 - [Lucide Icons](https://lucide.dev/icons/)
 
 ## 📁 Project Structure
-
+```
 src/
 ├── assets/ # Static assets
 ├── components/ # Reusable components (Topbar, SubMenu, Popup, etc.)
@@ -33,4 +33,4 @@ src/
 ├── topbar/ # Topbar + language/download popups
 ├── views/ # Page views (Home, Resume, Contact, Skills, etc.)
 ├── App.vue # Root component
-├── main.js # App entry point
+├── main.js # App entry point```
