@@ -38,4 +38,19 @@ src/
 ├── topbar/ # Topbar + language/download popups
 ├── views/ # Page views (Home, Resume, Contact, Skills, etc.)
 ├── App.vue # Root component
-├── main.js # App entry point```
+├── main.js # App entry point
+```
+
+🚀 Quick Start
+
+```bash
+# Clone the repo
+git clone https://github.com/LazyBear168/myResume.git
+cd myResume
+
+# Install dependencies
+npm install
+
+# Start the local server
+npm run dev
+
