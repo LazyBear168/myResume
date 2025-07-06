@@ -1,8 +1,10 @@
 /* File: src/components/topbar/Topbar.css */
+/* Author: Cheng */
 
 /* === NAV LAYOUT === */
 .topBarWrapper {
   background-color: white;
+  width: 100%;
   white-space: nowrap;
   position: relative;
   z-index: 1000;
@@ -103,4 +105,10 @@
 .dropBtn {
   font-weight: bold;
   font-size: 16px;
+}
+
+@media (width: 210mm) {
+  .topBarWrapper {
+    width: 210mm;
+  }
 }

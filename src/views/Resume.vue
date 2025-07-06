@@ -1,8 +1,9 @@
 <!-- File: src/views/Resume.vue -->
+<!-- Author: Cheng -->
+<!-- Description: This view displays the user's complete resume. -->
 <template>
   <div class="container">
     <div class="box-left">
-      <!-- 直接使用 resumeData.picture -->
       <img :src="resumeData.picture" alt="My picture" class="picture-img" />
 
       <h1 :class="locale === 'en' ? 'name-en' : 'name-zh'">
@@ -109,6 +110,26 @@
         <h3>{{ $t('Home.selfIntroduction') }}</h3>
         <p class="paragraph">{{ resumeData.selfIntro.selfIntroComplete }}</p>
       </section>
+
+      <section>
+        <h3>{{ $t('Home.myPortfolio') }}</h3>
+        <ul>
+          <li v-for="project in resumeProjects" :key="project.name">
+            <template v-if="project.url.startsWith('/')">
+              <router-link :to="project.url">
+                <strong>{{ project.name }}</strong>
+              </router-link>
+            </template>
+            <template v-else>
+              <a :href="project.url" target="_blank" rel="noopener noreferrer">
+                <strong>{{ project.name }}</strong>
+              </a>
+            </template>
+            <br />
+            {{ project.descriptionSimple }}<br />
+          </li>
+        </ul>
+      </section>
     </div>
   </div>
 </template>
@@ -125,4 +146,7 @@ import './Views.css'
 const { locale } = useI18n()
 
 const resumeData = computed(() => (locale.value === 'en' ? enResume : zhResume))
+const resumeProjects = computed(() =>
+  resumeData.value.projects.filter((p) => p.type.includes('resume'))
+)
 </script>

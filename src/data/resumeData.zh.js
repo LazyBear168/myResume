@@ -1,9 +1,13 @@
 // File: src/data/resumeData.zh.js
+// Author: Cheng
+// Description: Resume data in Chinese (Traditional) with added descriptions for various sections
+
 import MyPicture from '/assets/Mypicture.jpg'
 
 export default {
   picture: MyPicture,
   name: '張丞日',
+  License: '土木工程技師',
   education: [
     {
       school: '台灣世曦工程顧問股份有限公司',
@@ -13,7 +17,7 @@ export default {
     {
       key: 'ntu',
       school: '國立台灣大學 土木工程學系',
-      degree: '結構組',
+      degree: '碩士學位',
       duration: '2020/09 - 2022/09',
     },
     {
@@ -28,10 +32,11 @@ export default {
       'HTML',
       'Css',
       'React',
-      'vue',
+      'vue.js',
       'Node.js',
       'Python',
       'LabVIEW',
+      'git',
       'Matlab',
       'Wolfram Mathematica',
     ],
@@ -41,7 +46,7 @@ export default {
   selfIntro: {
     selfIntroSimple: `　我是一位具備工程背景並熱衷於技術創新的學習者，過去在結構工程領域累積紮實的邏輯思維與解決問題能力。近年來積極投入前端與全端網頁開發學習，熟悉 JavaScript、HTML、CSS、Vue、React 等技術，也具備 Node.js 與 Python 等後端工具操作經驗。
     　期望轉職為網頁前端／全端工程師，結合理工思維與實作能力，參與產品開發並持續精進工程技能。`,
-    selfIntroComplete: `　我是一位擁有結構工程背景、邏輯嚴謹且熱愛技術挑戰的求職者。過去在土木結構領域從事工程設計多年，參與多項大型公共工程專案，期間累積了專業的結構設計能力與跨部門協作經驗。
+    selfIntroComplete: `　我是一位擁有結構工程背景、邏輯嚴謹且熱愛技術挑戰的求職者。過去在土木結構領域從事工程設計，參與多項大型公共工程專案，期間累積了專業的結構設計能力與跨部門協作經驗。
 
     　在實務工作中，我不僅執行設計任務，也主動開發輔助設計工具。其中包含一套鋼結構耐震設計軟體，用於潮州機廠鋼構主廠房之結構分析與設計，提升設計效率與準確度。這段經歷讓我更加確定自己對於軟體開發的熱情與潛力。因此，我積極投入前端與全端技術的學習，掌握了 JavaScript、HTML、CSS、Vue.js、React 等前端技術，並具備 Node.js、Python 的後端實作經驗。
     
@@ -57,7 +62,7 @@ export default {
     {
       name: 'Crypto Index Tracker',
       url: 'https://crypto-index-app.web.app/',
-      type: ['front', 'Home', 'project'],
+      type: ['Home', 'front', 'resume', 'project'],
       descriptionSimple:
         '使用 React 開發的加密貨幣追蹤平台，整合多來源 API 並自建後端提供歷史資料與 K 線圖，前端部署於 Firebase，強化 API 串接與資料視覺化能力。',
       descriptionComplete:
@@ -67,7 +72,7 @@ export default {
     {
       name: 'Sunny Habit App',
       url: 'https://sunny-habit-app.web.app/',
-      type: ['front', 'Home', 'project'],
+      type: ['Home', 'front', 'resume', 'project'],
       descriptionSimple:
         'React.js 習慣養成工具，具巢狀清單、打卡統計與 Firebase 驗證，著重互動設計與資料整合。',
       descriptionComplete:
@@ -77,7 +82,7 @@ export default {
     {
       name: 'Chengs Resume',
       url: 'https://chengs-resume.web.app/',
-      type: ['front', 'Home', 'project'],
+      type: ['Home', 'front', 'project'],
       descriptionSimple:
         '個人履歷網站，展示學經歷、技能與作品，支援中英文切換與響應式設計。（就是您現在在的這個網頁呦）',
       descriptionComplete:
@@ -87,7 +92,7 @@ export default {
     {
       name: 'Render Server 儲存幣價資訊',
       url: 'https://crypto-index-backend.onrender.com/kline',
-      type: ['back', 'project'],
+      type: ['Home', 'back', 'project'],
       descriptionSimple:
         '提供前端查詢加密幣歷史價格與 K 線圖資料的 API 後端服務，整合 CoinGecko 與 Binance API 並部署於 Render。',
       descriptionComplete:
@@ -97,7 +102,7 @@ export default {
     {
       name: '點擊這裡看更多介紹',
       url: '/projects/personal',
-      type: ['Home', 'front', 'back'],
+      type: ['Home', 'resume', 'front', 'back'],
     },
   ],
 

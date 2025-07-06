@@ -1,4 +1,7 @@
-<!-- name: src/App.vue -->
+<!-- File: src/App.vue -->
+<!-- Author: Cheng -->
+<!-- Description: Main app layout, including navigation (Topbar) and routed content (via vue-router) -->
+
 <template>
   <div>
     <!-- Topbar for site-wide navigation -->

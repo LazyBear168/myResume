@@ -16,11 +16,15 @@
     "professionalProjects": "公司專案",
     "jobs": "職涯經歷",
     "schooling": "教育背景",
-    "contactForm": "聯絡表單",
-    "language": "語言"
+    "contactForm": "聯絡方式",
+    "language": "語言",
+    "download": "下載"
   },
   "language": {
     "select": "選擇語言"
+  },
+  "download": {
+    "select": "選擇下載種類"
   },
   "Home": {
     "skills": "相關技能",

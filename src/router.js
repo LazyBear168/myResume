@@ -1,4 +1,9 @@
-// src/router.js
+// File: src/router.js
+// Author: Cheng
+// Description: Defines the routing configuration for the Vue.js app.
+// The file contains all route paths and their associated components,
+// which enable navigation within the app using Vue Router.
+
 import { createRouter, createWebHistory } from 'vue-router'
 import AppHome from './views/AppHome.vue'
 import Resume from './views/Resume.vue'

@@ -1,9 +1,12 @@
-// src/main.js
+// File: src/main.js
+// Author: Cheng
+// Description: Initialize Vue app with router and i18n (internationalization)
+
 import { createApp } from 'vue'
+import { createI18n } from 'vue-i18n'
+
 import App from './App.vue'
 import router from './router'
-
-import { createI18n } from 'vue-i18n'
 import zh from './locales/zh.json'
 import en from './locales/en.json'
 

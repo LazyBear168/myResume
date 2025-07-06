@@ -1,8 +1,11 @@
-<!-- File: src/views/Contact.vue -->
+<!-- File: src/views/EducationBackground.vue -->
+<!-- Author: Cheng -->
+<!-- Description: This view displays the user's education background, 
+ including schools attended, degrees earned, study/work experience, research publications, and thesis. -->
+
 <template>
   <div class="container">
     <div class="box">
-      <!-- 直接使用 resumeData.picture -->
       <img :src="resumeData.picture" alt="My picture" class="picture-img" />
 
       <h1 class="name">
@@ -19,11 +22,11 @@
         <h3 class="section-title">{{ $t('resume.StudyWorkExperience') }}</h3>
         <ul>
           <li v-for="item in resumeData.education" :key="item.school">
-            {{ item.school }}<br />
+            {{ item.school }}
             <span v-if="item.degree"
               >{{ item.degree }}（{{ item.duration }}）</span
             >
-            <span v-else>（{{ item.duration }}）</span>
+            <span v-else>（{{ item.duration }}）</span><br /><br />
           </li>
         </ul>
 
@@ -47,6 +50,7 @@
               resumeData.research.publish.title || resumeData.research.publish
             }}
           </li>
+          <br />
           <li
             v-if="resumeData.research.thesis && resumeData.research.thesis.url"
           >
@@ -64,6 +68,7 @@
               resumeData.research.pubthesisish
             }}
           </li>
+          <br />
           <li>{{ resumeData.research.tools.join('、') }}</li>
         </ul>
       </section>

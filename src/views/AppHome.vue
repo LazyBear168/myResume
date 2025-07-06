@@ -1,11 +1,14 @@
-<!-- File: src/views/Resume.vue -->
+<!-- File: src/views/AppHome.vue -->
+<!-- Author: Cheng -->
+<!-- Description: This is the main view of the portfolio website. 
+The content is dynamically updated based on the selected language using Vue i18n. -->
+
 <template>
   <div class="container">
     <div class="box">
-      <!-- 直接使用 resumeData.picture -->
       <img :src="resumeData.picture" alt="My picture" class="picture-img" />
 
-      <h1 class="name">
+      <h1 :class="locale === 'en' ? 'name-en' : 'name-zh'">
         {{ resumeData.name }}
       </h1>
       <h3 :class="locale === 'en' ? 'education-en' : 'education-zh'" v-if="ntu">
@@ -35,19 +38,17 @@
         <ul>
           <li v-for="project in homeProjects" :key="project.name">
             <template v-if="project.url.startsWith('/')">
-              <!-- 使用 router-link -->
               <router-link :to="project.url">
                 <strong>{{ project.name }}</strong>
               </router-link>
             </template>
             <template v-else>
-              <!-- 外部連結 -->
               <a :href="project.url" target="_blank" rel="noopener noreferrer">
                 <strong>{{ project.name }}</strong>
               </a>
             </template>
             <br />
-            {{ project.descriptionSimple }}<br />
+            {{ project.descriptionSimple }}<br /><br />
           </li>
         </ul>
       </section>

@@ -1,4 +1,7 @@
-<!-- File: src/views/Contact.vue -->
+<!-- File: src/views/PersonalProjects.vue -->
+<!-- Author: Cheng -->
+<!-- Description: This view showcases all of the user's personal projects. -->
+
 <template>
   <div class="container">
     <div class="box">
@@ -30,6 +33,7 @@
               rel="noopener noreferrer"
             >
               <div>{{ $t('githubLink') }}</div>
+              <br />
             </a>
           </li>
         </ul>

@@ -1,8 +1,13 @@
+// File: src/data/resumeData.en.js
+// Author: Cheng
+// Description: Resume data in English with added descriptions for various sections
+
 import MyPicture from '/assets/Mypicture.jpg'
 
 export default {
   picture: MyPicture,
   name: 'Cheng-Jih Chang',
+  License: 'Civil Engineering Technician',
   education: [
     {
       school: 'CECI Engineering Consultants, Inc., Taiwan',
@@ -12,7 +17,7 @@ export default {
     {
       key: 'ntu',
       school: 'National Taiwan University, Department of Civil Engineering',
-      degree: 'Structural Division',
+      degree: 'Master degree',
       duration: '2020/09 - 2022/09',
     },
     {
@@ -27,10 +32,11 @@ export default {
       'HTML',
       'CSS',
       'React',
-      'Vue',
+      'Vue.js',
       'Node.js',
       'Python',
       'LabVIEW',
+      'git',
       'Matlab',
       'Wolfram Mathematica',
     ],
@@ -56,7 +62,7 @@ I’m eager to contribute to digital products with strong logic, practical skill
     {
       name: 'Crypto Index Tracker',
       url: 'https://crypto-index-app.web.app/',
-      type: ['front', 'Home', 'project'],
+      type: ['front', 'resume', 'Home', 'project'],
       descriptionSimple:
         'A React-based cryptocurrency tracking platform integrating multiple APIs and a custom backend for historical K-line data. Deployed on Firebase. Strengthens skills in API integration and data visualization.',
       descriptionComplete:
@@ -66,7 +72,7 @@ I’m eager to contribute to digital products with strong logic, practical skill
     {
       name: 'Sunny Habit App',
       url: 'https://sunny-habit-app.web.app/',
-      type: ['front', 'Home', 'project'],
+      type: ['front', 'resume', 'Home', 'project'],
       descriptionSimple:
         'A React.js habit tracker featuring nested lists, check-in tracking, and Firebase authentication. Focuses on interactive UX and data integration.',
       descriptionComplete:
@@ -96,7 +102,7 @@ I’m eager to contribute to digital products with strong logic, practical skill
     {
       name: 'Click here for more',
       url: '/projects/personal',
-      type: ['Home', 'front', 'back'],
+      type: ['Home', 'resume', 'front', 'back'],
     },
   ],
 

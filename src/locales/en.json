@@ -17,10 +17,14 @@
     "jobs": "Career Experience",
     "schooling": "Education Background",
     "contactForm": "Contact Form",
-    "language": "Language"
+    "language": "Language",
+    "download": "Download"
   },
   "language": {
     "select": "Select Language"
+  },
+  "download": {
+    "select": "Select Download Type"
   },
   "Home": {
     "skills": "Skills",

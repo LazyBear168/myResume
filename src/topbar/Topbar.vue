@@ -1,3 +1,9 @@
+<!-- Name: src/topbar/Topbar.vue -->
+<!-- Author: Cheng -->
+<!-- Description: This component handles the top navigation bar of the app, including the logo, main menus, and responsive behavior.
+     It displays different menus and submenus, provides a burger menu for smaller screens, and includes language selection functionality. 
+     The component uses Vue's reactivity system to dynamically show and hide menus based on user interaction and screen size. -->
+
 <template>
   <nav class="topBarWrapper" ref="wrapperRef">
     <ul>
@@ -73,6 +79,12 @@
       @select="changeLanguage"
       @close="showLanguagePopup = false"
     />
+
+    <!-- Download Popup -->
+    <DownloadPopup
+      v-if="showDownloadPopup"
+      @close="showDownloadPopup = false"
+    />
   </nav>
 </template>
 
@@ -83,6 +95,7 @@ import { useI18n } from 'vue-i18n'
 import sharedMenus from './SharedMenus'
 import SubMenu from './SubMenu.vue'
 import LanguagePopup from './LanguagePopup.vue'
+import DownloadPopup from './DownloadPopup.vue'
 
 const openSubmenu = ref(null)
 const props = defineProps({
@@ -94,6 +107,7 @@ const wrapperRef = ref(null)
 const openMenu = ref(null)
 const visibleCount = ref(11)
 const showLanguagePopup = ref(false)
+const showDownloadPopup = ref(false)
 
 // Responsive menu logic
 const updateVisibleCount = () => {
@@ -143,6 +157,8 @@ const overflowMenus = computed(() => menuItems.value.slice(visibleCount.value))
 function handleSubmenuSelect(item) {
   if (item.type === 'language') {
     showLanguagePopup.value = true
+  } else if (item.type === 'download') {
+    showDownloadPopup.value = true
   } else if (item.type === 'route' && props.onSelectMenuItem) {
     props.onSelectMenuItem(item.route)
   }

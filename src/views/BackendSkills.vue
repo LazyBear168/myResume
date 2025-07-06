@@ -1,8 +1,10 @@
-<!-- File: src/views/Contact.vue -->
+<!-- File: src/views/BackendSkills.vue -->
+<!-- Author: Cheng -->
+<!-- Description: This view showcases the user's backend development projects. -->
+
 <template>
   <div class="container">
     <div class="box">
-      <!-- 直接使用 resumeData.picture -->
       <img :src="resumeData.picture" alt="My picture" class="picture-img" />
 
       <h1 class="name">
@@ -20,13 +22,11 @@
         <ul>
           <li v-for="project in backProjects" :key="project.name">
             <template v-if="project.url.startsWith('/')">
-              <!-- 使用 router-link -->
               <router-link :to="project.url">
                 <strong>{{ project.name }}</strong>
               </router-link>
             </template>
             <template v-else>
-              <!-- 外部連結 -->
               <a :href="project.url" target="_blank" rel="noopener noreferrer">
                 <strong>{{ project.name }}</strong>
               </a>
@@ -40,6 +40,7 @@
               rel="noopener noreferrer"
             >
               <div>{{ $t('githubLink') }}</div>
+              <br />
             </a>
           </li>
         </ul>

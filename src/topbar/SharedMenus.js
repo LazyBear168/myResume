@@ -1,5 +1,7 @@
-// File name: SharedMenus.js
-// Author: Lazy Bear
+// File : src/topbar/SharedMenus.js
+// Author: Cheng
+// Description: This file contains the configuration for the shared menu items
+// in the application, including links to different sections.
 
 const sharedMenus = [
   {
@@ -77,7 +79,10 @@ const sharedMenus = [
     labelKey: 'menu.settings',
     aria: 'Settings',
     id: 'settingsMenu',
-    items: [{ key: 'submenu.language', type: 'language' }],
+    items: [
+      { key: 'submenu.language', type: 'language' },
+      { key: 'submenu.download', type: 'download' },
+    ],
     hidePriority: 10,
   },
 ]

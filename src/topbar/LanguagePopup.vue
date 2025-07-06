@@ -1,4 +1,8 @@
-<!-- File: components/LanguagePopup.vue -->
+<!-- File: src/topbar/LanguagePopup.vue -->
+<!-- Author: Cheng -->
+<!-- Description: This component renders a popup modal for selecting a language. 
+     It displays a list of available languages and emits a `select` event when the user selects a language.
+     The popup can be closed by clicking outside the popup or by using the close button. -->
 <template>
   <div class="popup-backdrop" @click.self="$emit('close')">
     <div class="popup">
@@ -24,6 +28,7 @@ const languages = {
 <style scoped>
 .popup-backdrop {
   position: fixed;
+  width: 100%;
   top: 0;
   left: 0;
   right: 0;
@@ -60,5 +65,10 @@ const languages = {
 }
 .popup button:hover {
   background-color: #f5f5f5;
+}
+@media (max-width: 595px) {
+  .popup-backdrop {
+    width: 595px;
+  }
 }
 </style>

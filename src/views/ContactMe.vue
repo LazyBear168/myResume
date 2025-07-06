@@ -1,8 +1,11 @@
 <!-- File: src/views/Contact.vue -->
+<!-- Author: Cheng -->
+<!-- Description: This view displays the user's contact information, 
+ including phone number, email, and address. -->
+
 <template>
   <div class="container">
     <div class="box">
-      <!-- 直接使用 resumeData.picture -->
       <img :src="resumeData.picture" alt="My picture" class="picture-img" />
 
       <h1 class="name">

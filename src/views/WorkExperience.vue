@@ -1,13 +1,12 @@
-<!-- File: src/views/Contact.vue -->
+<!-- File: src/views/WorkExperience.vue -->
+<!-- Author: Cheng -->
+<!-- Description: This view displays the user's work experience. -->
 <template>
   <div class="container">
     <div class="box">
-      <!-- 直接使用 resumeData.picture -->
       <img :src="resumeData.picture" alt="My picture" class="picture-img" />
 
-      <h1 class="name">
-        {{ resumeData.name }}
-      </h1>
+      <h1 class="name">{{ resumeData.name }} / {{ resumeData.License }}</h1>
       <h3 :class="locale === 'en' ? 'education-en' : 'education-zh'" v-if="ntu">
         {{ ntu.school }}
         <span v-if="ntu.degree">{{ ntu.degree }}</span>
