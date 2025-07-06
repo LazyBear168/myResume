@@ -1,3 +1,7 @@
+Description: Personal bilingual resume site built with Vue 3
+Website: https://chengs-resume.web.app/
+Topics: vue3, resume, portfolio, i18n, vite
+
 # Cheng's Resume Website
 
 A bilingual (中文/English) responsive resume and portfolio site built with Vue 3.  
