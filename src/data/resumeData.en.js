@@ -172,4 +172,9 @@ I’m eager to contribute to digital products with strong logic, practical skill
         'Contributed to the structural strengthening of existing tunnels and retaining structures. Involved in field investigation, structural simulation, and retrofit scheme evaluations. Acquired experience in rehabilitating legacy systems and formulating data-driven technical proposals.',
     },
   ],
+  demoVideo: {
+    myResume: 'My Resume Website',
+    cryptoIndex: 'My Crypto Index Website',
+    habitTracker: 'My Habit Tracker Website',
+  },
 }

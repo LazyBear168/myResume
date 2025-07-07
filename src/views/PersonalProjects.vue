@@ -5,7 +5,6 @@
 <template>
   <div class="container">
     <div class="box">
-      <!-- 直接使用 resumeData.picture -->
       <img :src="resumeData.picture" alt="My picture" class="picture-img" />
 
       <h1 class="name">
@@ -38,6 +37,46 @@
           </li>
         </ul>
       </section>
+      <div class="video-box">
+        <div class="demo-video">
+          <iframe
+            width="200"
+            :height="demoVideoHeight"
+            :src="'https://www.youtube.com/embed/y5jfSLDpivs'"
+            title="Demo Video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <p>{{ resumeData.demoVideo.myResume }}</p>
+        </div>
+
+        <div class="demo-video">
+          <iframe
+            width="200"
+            :height="demoVideoHeight"
+            :src="'https://www.youtube.com/embed/ug8ybXsst6U'"
+            title="Demo Video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <p>{{ resumeData.demoVideo.cryptoIndex }}</p>
+        </div>
+
+        <div class="demo-video">
+          <iframe
+            width="200"
+            :height="demoVideoHeight"
+            :src="'https://www.youtube.com/embed/Kf4CASg4BnQ'"
+            title="Demo Video"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <p>{{ resumeData.demoVideo.habitTracker }}</p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -55,6 +94,8 @@ const { locale } = useI18n()
 const resumeData = computed(() =>
   locale.value === 'en' ? enresumeData : zhresumeData
 )
+
+const demoVideoHeight = computed(() => (locale.value === 'en' ? '70' : '180'))
 
 const ntu = computed(() =>
   resumeData.value.education.find((item) => item.key === 'ntu')

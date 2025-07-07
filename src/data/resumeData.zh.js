@@ -165,4 +165,9 @@ export default {
         '參與老舊結構補強與擋土設施設計，從現況調查、結構模擬到補強方案評估皆有涉獵。熟悉既有系統改造流程，並提升了問題分析、資料整理與技術提案能力，具備將工程問題轉化為系統解決方案的實務經驗。',
     },
   ],
+  demoVideo: {
+    myResume: '我的履歷網站',
+    cryptoIndex: '我的Crypto index網站',
+    habitTracker: '我的Habit Tracker 網站',
+  },
 }

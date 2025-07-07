@@ -114,6 +114,16 @@
   margin: 1rem;
   list-style: none;
 }
+.video-box {
+  display: flex;
+  flex-direction: row;
+}
+.demo-video {
+  padding-right: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 /* Responsive design with zooming effect */
 @media (max-width: 210mm) {
