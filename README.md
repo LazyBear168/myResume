@@ -35,13 +35,33 @@ This project showcases frontend and backend projects, professional experience, e
 ## 📁 Project Structure
 ```
 src/
-├── assets/ # Static assets
-├── components/ # Reusable components (Topbar, SubMenu, Popup, etc.)
-├── data/ # Resume data in zh/en JSON format
-├── topbar/ # Topbar + language/download popups
-├── views/ # Page views (Home, Resume, Contact, Skills, etc.)
-├── App.vue # Root component
-├── main.js # App entry point
+├── App.css
+├── App.vue
+├── data
+│   ├── resumeData.en.js
+│   └── resumeData.zh.js
+├── locales
+│   ├── en.json
+│   └── zh.json
+├── main.js
+├── router.js
+├── topbar
+│   ├── DownloadPopup.vue
+│   ├── LanguagePopup.vue
+│   ├── SharedMenus.js
+│   ├── SubMenu.vue
+│   ├── Topbar.css
+│   └── Topbar.vue
+└── views
+    ├── AppHome.vue
+    ├── BackendSkills.vue
+    ├── ContactMe.vue
+    ├── EducationBackground.vue
+    ├── FrontendSkills.vue
+    ├── PersonalProjects.vue
+    ├── Resume.vue
+    ├── Views.css
+    └── WorkExperience.vue
 ```
 
 🚀 Quick Start
