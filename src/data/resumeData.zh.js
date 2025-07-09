@@ -25,7 +25,7 @@ export default {
       duration: '2016/09 - 2020/07',
     },
   ],
-  jobApplication: '應徵職務：前端網頁工程師、全端網頁工程師',
+  jobApplication: '應徵職務：前端網頁工程師、全／後端網頁工程師',
   skills: {
     progarmming: [
       'JavaScript',
@@ -60,36 +60,6 @@ export default {
 
   projects: [
     {
-      name: 'Crypto Index Tracker',
-      url: 'https://crypto-index-app.web.app/',
-      type: ['Home', 'front', 'resume', 'project'],
-      descriptionSimple:
-        '使用 React 開發的加密貨幣追蹤平台，整合多來源 API 並自建後端提供歷史資料與 K 線圖，前端部署於 Firebase，強化 API 串接與資料視覺化能力。',
-      descriptionComplete:
-        '使用 React 開發的加密貨幣指數追蹤平台，前端部署於 Firebase，整合 CoinGecko API 與 Binance API，並自建後端 Render Server 提供 K 線圖與歷史價格查詢功能。支援多種加密資產的即時價格與圖表顯示，具備響應式設計與狀態管理，強化前端 API 串接與資料視覺化實作能力。',
-      githubLink: 'https://github.com/LazyBear168/crypto-index-app',
-    },
-    {
-      name: 'Sunny Habit App',
-      url: 'https://sunny-habit-app.web.app/',
-      type: ['Home', 'front', 'resume', 'project'],
-      descriptionSimple:
-        'React.js 習慣養成工具，具巢狀清單、打卡統計與 Firebase 驗證，著重互動設計與資料整合。',
-      descriptionComplete:
-        '使用 React.js 開發的習慣養成工具，支援巢狀清單、每日打卡、自訂習慣與統計圖表，並整合 Firebase 進行資料儲存與身份驗證。強化前後端整合與使用者互動設計能力。',
-      githubLink: 'https://github.com/LazyBear168/habit-tracker',
-    },
-    {
-      name: 'Chengs Resume',
-      url: 'https://chengs-resume.web.app/',
-      type: ['Home', 'front', 'project'],
-      descriptionSimple:
-        '個人履歷網站，展示學經歷、技能與作品，支援中英文切換與響應式設計。（就是您現在在的這個網頁呦）',
-      descriptionComplete:
-        '使用 Vue.js 開發的個人履歷網站，整合 Vue Router、Vue i18n 進行頁面切換與語系管理，具備中英文雙語模式與響應式設計，內容涵蓋自我介紹、技能、學經歷與個人作品等，部署於 Firebase Hosting。展現前端開發與國際化實作能力。（就是您現在在的這個網頁呦）',
-      githubLink: 'https://github.com/LazyBear168/myResume',
-    },
-    {
       name: 'Render Server 儲存幣價資訊',
       url: 'https://crypto-index-backend.onrender.com/kline',
       type: ['Home', 'back', 'project'],
@@ -100,9 +70,53 @@ export default {
       githubLink: 'https://github.com/LazyBear168/crypto-index-backend',
     },
     {
+      name: 'Crypto Index App',
+      url: 'https://crypto-index-app.web.app/',
+      type: ['Home', 'front', 'resume', 'project'],
+      descriptionSimple:
+        '使用 React 開發的加密貨幣追蹤平台，整合多來源 API 並自建後端提供歷史資料與 K 線圖，前端部署於 Firebase，強化 API 串接與資料視覺化能力。',
+      descriptionComplete:
+        '使用 React 開發的加密貨幣指數追蹤平台，前端部署於 Firebase，整合 CoinGecko API 與 Binance API，並自建後端 Render Server 提供 K 線圖與歷史價格查詢功能。支援多種加密資產的即時價格與圖表顯示，具備響應式設計與狀態管理，強化前端 API 串接與資料視覺化實作能力。',
+      githubLink: 'https://github.com/LazyBear168/crypto-index-app',
+      youtubeLink: 'https://www.youtube.com/embed/ug8ybXsst6U',
+    },
+    {
+      name: 'Habit Tracker',
+      url: 'https://sunny-habit-app.web.app/',
+      type: ['Home', 'front', 'resume', 'project'],
+      descriptionSimple:
+        'React.js 習慣養成工具，具巢狀清單、打卡統計與 Firebase 驗證，著重互動設計與資料整合。',
+      descriptionComplete:
+        '使用 React.js 開發的習慣養成工具，支援巢狀清單、每日打卡、自訂習慣與統計圖表，並整合 Firebase 進行資料儲存與身份驗證。強化前後端整合與使用者互動設計能力。',
+      githubLink: 'https://github.com/LazyBear168/habit-tracker',
+      youtubeLink: 'https://www.youtube.com/embed/Kf4CASg4BnQ',
+    },
+    {
+      name: 'Chengs Resume',
+      url: 'https://chengs-resume.web.app/',
+      type: ['Home', 'front', 'project'],
+      descriptionSimple:
+        '個人履歷網站，展示學經歷、技能與作品，支援中英文切換與響應式設計。（就是您現在在的這個網頁呦）',
+      descriptionComplete:
+        '使用 Vue.js 開發的個人履歷網站，整合 Vue Router、Vue i18n 進行頁面切換與語系管理，具備中英文雙語模式與響應式設計，內容涵蓋自我介紹、技能、學經歷與個人作品等，部署於 Firebase Hosting。展現前端開發與國際化實作能力。（就是您現在在的這個網頁呦）',
+      githubLink: 'https://github.com/LazyBear168/myResume',
+      youtubeLink: 'https://www.youtube.com/embed/y5jfSLDpivs',
+    },
+    {
       name: '點擊這裡看更多介紹',
       url: '/projects/personal',
       type: ['Home', 'resume', 'front', 'back'],
+    },
+    {
+      name: '【AI Poster】多模態神機妙算 - AI帶你在股市賺 - 使用 CNN, BERT, GAT 證明多模態數據源和圖神經網絡 (GNN) 技術在金融市場的應用價值 | stanCode',
+      url: 'https://www.youtube.com/watch?v=pWVPCW4UvTI&t=218s&ab_channel=stanCode%E6%A8%99%E6%BA%96%E7%A8%8B%E5%BC%8F%E6%95%99%E8%82%B2%E6%A9%9F%E6%A7%8B',
+      type: ['group'],
+      descriptionSimple: '',
+      descriptionComplete:
+        '本專案旨在提升股價預測的準確性，通過多模態訓練結合新聞文本和股價蠟燭圖數據。使用圖神經網絡（GNN）進行特徵轉換和融合，克服單一數據源分析的不足。我們預期透過此專案證明多模態數據源和先進的圖神經網絡技術在金融市場預測中的潛力和應用價值。並期許後續能進一步優化模型和擴大數據來源，獲得更精確的預測結果。而我在此專案主要負責文字處理與BERT語言模型的架構',
+      githubLink:
+        'https://github.com/stanCodeTW/AI-Projects/tree/main/SC201Mar2024Projects/GroupE',
+      youtubeLink: 'https://www.youtube.com/embed/pWVPCW4UvTI?start=218',
     },
   ],
 

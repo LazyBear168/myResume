@@ -6,14 +6,23 @@
   <div class="popup-backdrop" @click.self="$emit('close')">
     <div class="popup">
       <h3>{{ $t('download.select') }}</h3>
+      <label v-if="route.path === '/projects/personal'">
+        <input type="checkbox" v-model="showQRCode" />
+        {{ $t('download.YtToQrcode') }}
+      </label>
+
       <button @click="downloadPDF">PDF</button>
     </div>
   </div>
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { inject } from 'vue'
 import html2pdf from 'html2pdf.js'
+import { useRoute } from 'vue-router'
+const route = useRoute()
+
+const showQRCode = inject('showQRCode')
 
 // Define PDF options
 const options = {
@@ -36,7 +45,7 @@ const options = {
 const downloadPDF = () => {
   console.log('Downloading...')
   // Select the content inside the container class (excluding top bar)
-  const content = document.querySelector('.container') // .container includes everything except top bar
+  const content = document.querySelector('.container')
 
   // Generate and download the PDF with scaling options
   html2pdf()
@@ -60,27 +69,28 @@ const downloadPDF = () => {
   align-items: center;
   z-index: 9999;
 }
-
 .popup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background: white;
   padding: 20px 30px;
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
-
 .popup h3 {
   margin-bottom: 10px;
   font-size: 18px;
 }
-
 .popup button {
-  background: none;
-  border: none;
-  padding: 6px 12px;
+  display: flex;
+  flex-direction: column;
+  background: rgb(221, 240, 248);
+  align-items: center;
+  padding: 12px;
   border-radius: 4px;
   cursor: pointer;
 }
-
 .popup button:hover {
   background-color: #f5f5f5;
 }

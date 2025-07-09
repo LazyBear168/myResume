@@ -1,8 +1,9 @@
 <!-- Name: src/topbar/Topbar.vue -->
 <!-- Author: Cheng -->
-<!-- Description: This component handles the top navigation bar of the app, including the logo, main menus, and responsive behavior.
-     It displays different menus and submenus, provides a burger menu for smaller screens, and includes language selection functionality. 
-     The component uses Vue's reactivity system to dynamically show and hide menus based on user interaction and screen size. -->
+<!-- Description: 
+        This component handles the top navigation bar of the app, including the logo, main menus, and responsive behavior.
+        It displays different menus and submenus, provides a burger menu for smaller screens, and includes language selection functionality. 
+        The component uses Vue's reactivity system to dynamically show and hide menus based on user interaction and screen size. -->
 
 <template>
   <nav class="topBarWrapper" ref="wrapperRef">
@@ -105,7 +106,7 @@ const props = defineProps({
 const { t, locale } = useI18n()
 const wrapperRef = ref(null)
 const openMenu = ref(null)
-const visibleCount = ref(11)
+const visibleCount = ref(7)
 const showLanguagePopup = ref(false)
 const showDownloadPopup = ref(false)
 
@@ -115,10 +116,10 @@ const updateVisibleCount = () => {
     { max: 620, count: 1 },
     { max: 810, count: 4 },
     { max: 1024, count: 6 },
-    { max: 1150, count: 8 },
+    { max: 1150, count: 7 },
   ]
 
-  let count = 11
+  let count = 7
   for (const bp of breakpoints) {
     if (window.innerWidth < bp.max) {
       count = bp.count

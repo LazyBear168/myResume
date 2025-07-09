@@ -10,9 +10,11 @@ import router from './router'
 import zh from './locales/zh.json'
 import en from './locales/en.json'
 
+const savedLang = localStorage.getItem('language') || 'zh'
+
 const i18n = createI18n({
   legacy: false,
-  locale: 'zh',
+  locale: savedLang,
   fallbackLocale: 'en',
   messages: { zh, en },
 })

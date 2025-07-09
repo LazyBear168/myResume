@@ -14,22 +14,26 @@
     "backend": "Backend Skills",
     "personalProjects": "Personal Projects",
     "professionalProjects": "Professional Projects",
+    "groupProjects": "Group Project",
     "jobs": "Career Experience",
     "schooling": "Education Background",
     "contactForm": "Contact Form",
     "language": "Language",
-    "download": "Download"
+    "download": "Download",
+    "YtToQrcode": "YT-->QRcode"
   },
   "language": {
     "select": "Select Language"
   },
   "download": {
-    "select": "Select Download Type"
+    "select": "Select Download Type",
+    "YtToQrcode": "Show QR Code"
   },
   "Home": {
     "skills": "Skills",
     "selfIntroduction": "Self Introduction",
-    "myPortfolio": "My Portfolio"
+    "myPortfolio": "My Portfolio",
+    "groupPortfolio": "Group Works"
   },
   "resume": {
     "contact": "Contact Information",
@@ -52,6 +56,11 @@
       "languages": "Languages",
       "softskills": "Soft Skills"
     }
+  },
+  "QRcode": {
+    "website": "website",
+    "YouTube": "YouTube",
+    "GitHub": "GitHub"
   },
   "FontendSkill": "My Frontend Projects",
   "BackendSkill": "My Backend Projects",

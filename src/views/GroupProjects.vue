@@ -1,6 +1,6 @@
-<!-- File: src/views/PersonalProjects.vue -->
+<!-- File: src/views/GroupProjects.vue -->
 <!-- Author: Cheng -->
-<!-- Description: This view showcases all of the user's personal projects. -->
+<!-- Description: -->
 
 <template>
   <div class="container">
@@ -19,11 +19,11 @@
       </div>
 
       <section>
-        <h3 class="section-title">{{ $t('Home.myPortfolio') }}</h3>
+        <h3 class="section-title">{{ $t('Home.groupPortfolio') }}</h3>
         <ul class="scroll-window">
           <li
             class="project-box"
-            v-for="project in AllProjects"
+            v-for="project in AllGroupProjects"
             :key="project.name"
           >
             <div class="project-left">
@@ -43,24 +43,30 @@
             </div>
 
             <!-- YT iframe -->
-            <div v-if="showQRCode" class="project-right qr-box">
-              <img
-                v-if="qrMap[project.name]"
-                :src="qrMap[project.name]"
-                alt="QR Code"
-                class="qr-code"
-              />
-              <div v-else class="qr-warning">No QR code available</div>
+            <div class="project-right">
+              <iframe
+                v-if="project.youtubeLink && !showQRCode"
+                width="180"
+                :height="'130'"
+                :src="project.youtubeLink"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+
+              <div
+                v-else-if="project.youtubeLink && showQRCode"
+                class="project-right qr-box"
+              >
+                <img
+                  v-if="qrMap[project.name]"
+                  :src="qrMap[project.name]"
+                  alt="QR Code"
+                  class="qr-img"
+                />
+                <div v-else class="qr-warning">No QR code available</div>
+              </div>
             </div>
-            <iframe
-              v-else-if="project.youtubeLink"
-              width="180"
-              height="130"
-              :src="project.youtubeLink"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
           </li>
         </ul>
       </section>
@@ -89,9 +95,9 @@ const ntu = computed(() =>
   resumeData.value.education.find((item) => item.key === 'ntu')
 )
 
-const AllProjects = computed(() => {
+const AllGroupProjects = computed(() => {
   const filtered = resumeData.value.projects.filter((p) =>
-    p.type.includes('project')
+    p.type.includes('group')
   )
   if (showQRCode.value) {
     for (const project of filtered) {

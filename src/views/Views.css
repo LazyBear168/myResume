@@ -114,15 +114,46 @@
   margin: 1rem;
   list-style: none;
 }
-.video-box {
-  display: flex;
-  flex-direction: row;
+
+/* === For PersonalProjects === */
+.scroll-window {
+  max-height: 600px;
+  overflow-y: auto;
+  padding-right: 10px;
 }
-.demo-video {
-  padding-right: 5px;
+.scroll-window::-webkit-scrollbar {
+  width: 6px;
+}
+.scroll-window::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+.project-box {
+  display: flex;
+  padding: 4px;
+  margin: 0;
+  border-bottom: 1px solid #ffffff;
+}
+.project-left {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: left;
+  flex: 5;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+}
+.project-right {
+  flex: 2;
+  padding: 3px;
+  margin: 0;
+  font-size: 14px;
+}
+.qr-code {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-left: 1rem;
 }
 
 /* Responsive design with zooming effect */

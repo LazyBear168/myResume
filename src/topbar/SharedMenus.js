@@ -37,6 +37,11 @@ const sharedMenus = [
         type: 'route',
         route: 'projects/personal',
       },
+      {
+        key: 'submenu.groupProjects',
+        type: 'route',
+        route: 'projects/group',
+      },
     ],
     hidePriority: 3,
   },

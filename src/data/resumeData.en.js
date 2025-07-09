@@ -25,7 +25,8 @@ export default {
       duration: '2016/09 - 2020/07',
     },
   ],
-  jobApplication: 'Job Title: Frontend Web Developer, Full-Stack Web Developer',
+  jobApplication:
+    'Job Title: Front-end web engineer, full/back-end web engineer',
   skills: {
     progarmming: [
       'JavaScript',
@@ -60,36 +61,6 @@ I’m eager to contribute to digital products with strong logic, practical skill
 
   projects: [
     {
-      name: 'Crypto Index Tracker',
-      url: 'https://crypto-index-app.web.app/',
-      type: ['front', 'resume', 'Home', 'project'],
-      descriptionSimple:
-        'A React-based cryptocurrency tracking platform integrating multiple APIs and a custom backend for historical K-line data. Deployed on Firebase. Strengthens skills in API integration and data visualization.',
-      descriptionComplete:
-        'A cryptocurrency index tracking platform built with React and deployed on Firebase. Integrates CoinGecko and Binance APIs, along with a custom backend hosted on Render to serve K-line charts and historical price data. Displays prices and charts for multiple assets with responsive design and state management. Enhances practical API integration and data visualization skills.',
-      githubLink: 'https://github.com/LazyBear168/crypto-index-app',
-    },
-    {
-      name: 'Sunny Habit App',
-      url: 'https://sunny-habit-app.web.app/',
-      type: ['front', 'resume', 'Home', 'project'],
-      descriptionSimple:
-        'A React.js habit tracker featuring nested lists, check-in tracking, and Firebase authentication. Focuses on interactive UX and data integration.',
-      descriptionComplete:
-        'A habit tracking tool built with React.js, supporting nested lists, daily check-ins, custom habits, and statistics visualization. Integrated with Firebase for data storage and authentication. Strengthens frontend-backend integration and user experience design skills.',
-      githubLink: 'https://github.com/LazyBear168/habit-tracker',
-    },
-    {
-      name: 'Chengs Resume',
-      url: 'https://chengs-resume.web.app/',
-      type: ['front', 'Home', 'project'],
-      descriptionSimple:
-        'A personal resume website showcasing background, skills, and projects with responsive layout and bilingual support (you are here!).',
-      descriptionComplete:
-        'A personal resume site built with Vue.js, using Vue Router and Vue i18n for page navigation and language management. Features bilingual (EN/ZH) support and responsive layout, covering self-introduction, skills, education, and projects. Deployed on Firebase Hosting. Demonstrates frontend and internationalization skills. (Yes, you’re on this site!)',
-      githubLink: 'https://github.com/LazyBear168/myResume',
-    },
-    {
       name: 'Render Server for Crypto Data',
       url: 'https://crypto-index-backend.onrender.com/kline',
       type: ['back', 'project'],
@@ -100,9 +71,53 @@ I’m eager to contribute to digital products with strong logic, practical skill
       githubLink: 'https://github.com/LazyBear168/crypto-index-backend',
     },
     {
+      name: 'Crypto Index App',
+      url: 'https://crypto-index-app.web.app/',
+      type: ['front', 'resume', 'Home', 'project'],
+      descriptionSimple:
+        'A React-based cryptocurrency tracking platform integrating multiple APIs and a custom backend for historical K-line data. Deployed on Firebase. Strengthens skills in API integration and data visualization.',
+      descriptionComplete:
+        'A cryptocurrency index tracking platform built with React and deployed on Firebase. Integrates CoinGecko and Binance APIs, along with a custom backend hosted on Render to serve K-line charts and historical price data. Displays prices and charts for multiple assets with responsive design and state management. Enhances practical API integration and data visualization skills.',
+      githubLink: 'https://github.com/LazyBear168/crypto-index-app',
+      youtubeLink: 'https://www.youtube.com/embed/ug8ybXsst6U',
+    },
+    {
+      name: 'Habit Tracker',
+      url: 'https://sunny-habit-app.web.app/',
+      type: ['front', 'resume', 'Home', 'project'],
+      descriptionSimple:
+        'A React.js habit tracker featuring nested lists, check-in tracking, and Firebase authentication. Focuses on interactive UX and data integration.',
+      descriptionComplete:
+        'A habit tracking tool built with React.js, supporting nested lists, daily check-ins, custom habits, and statistics visualization. Integrated with Firebase for data storage and authentication. Strengthens frontend-backend integration and user experience design skills.',
+      githubLink: 'https://github.com/LazyBear168/habit-tracker',
+      youtubeLink: 'https://www.youtube.com/embed/Kf4CASg4BnQ',
+    },
+    {
+      name: 'Chengs Resume',
+      url: 'https://chengs-resume.web.app/',
+      type: ['front', 'Home', 'project'],
+      descriptionSimple:
+        'A personal resume website showcasing background, skills, and projects with responsive layout and bilingual support (you are here!).',
+      descriptionComplete:
+        'A personal resume site built with Vue.js, using Vue Router and Vue i18n for page navigation and language management. Features bilingual (EN/ZH) support and responsive layout, covering self-introduction, skills, education, and projects. Deployed on Firebase Hosting. Demonstrates frontend and internationalization skills. (Yes, you’re on this site!)',
+      githubLink: 'https://github.com/LazyBear168/myResume',
+      youtubeLink: 'https://www.youtube.com/embed/y5jfSLDpivs',
+    },
+    {
       name: 'Click here for more',
       url: '/projects/personal',
       type: ['Home', 'resume', 'front', 'back'],
+    },
+    {
+      name: '[AI Poster] Multimodal AI for Stock Prediction – Using CNN, BERT, and GAT to Demonstrate the Value of Multimodal Data and Graph Neural Networks (GNNs) in Financial Markets | stanCode',
+      url: 'https://www.youtube.com/watch?v=pWVPCW4UvTI&t=218s&ab_channel=stanCode%E6%A8%99%E6%BA%96%E7%A8%8B%E5%BC%8F%E6%95%99%E8%82%B2%E6%A9%9F%E6%A7%8B',
+      type: ['group'],
+      descriptionSimple: '',
+      descriptionComplete:
+        'This project aimed to enhance stock price prediction accuracy by combining multimodal data sources—news text and candlestick chart data—through multimodal training. We applied Graph Neural Networks (GNNs) for feature transformation and fusion, overcoming the limitations of relying on a single data type. The project demonstrated the potential of advanced GNN techniques and multimodal inputs in financial market forecasting. My primary role was processing textual data and designing the BERT-based language model architecture.',
+      githubLink:
+        'https://github.com/stanCodeTW/AI-Projects/tree/main/SC201Mar2024Projects/GroupE',
+      youtubeLink: 'https://www.youtube.com/embed/pWVPCW4UvTI?start=218',
     },
   ],
 

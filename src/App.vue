@@ -13,12 +13,15 @@
 </template>
 
 <script setup>
+import { provide, ref } from 'vue'
 import { useRouter } from 'vue-router'
-
 import Topbar from './topbar/Topbar.vue'
 import './App.css'
 
 const router = useRouter()
+
+const showQRCode = ref(false)
+provide('showQRCode', showQRCode)
 
 function handleMenuSelect(route) {
   router.push('/' + route)

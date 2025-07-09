@@ -13,6 +13,7 @@
     "frontend": "前端技能",
     "backend": "後端技能",
     "personalProjects": "個人專案",
+    "groupProjects": "團體專案",
     "professionalProjects": "公司專案",
     "jobs": "職涯經歷",
     "schooling": "教育背景",
@@ -24,12 +25,14 @@
     "select": "選擇語言"
   },
   "download": {
-    "select": "選擇下載種類"
+    "select": "選擇下載種類",
+    "YtToQrcode": "顯示 QR Code"
   },
   "Home": {
     "skills": "相關技能",
     "selfIntroduction": "自我介紹",
-    "myPortfolio": "我的作品"
+    "myPortfolio": "我的作品",
+    "groupPortfolio": "團體作品"
   },
   "resume": {
     "contact": "連絡方式",
@@ -52,6 +55,11 @@
       "languages": "語言能力",
       "softskills": "非技術能力"
     }
+  },
+  "QRcode": {
+    "website": "網站連結",
+    "YouTube": "YouTube",
+    "GitHub": "GitHub"
   },
   "FontendSkill": "我的前端作品",
   "BackendSkill": "我的後端作品",
